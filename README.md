@@ -1,8 +1,14 @@
-**A primary school maths game using HTML canvas, JS and EJS.**
+**A primary school maths game using HTML canvas, TS, JS and EJS.**
 
 **Go to the instructions page to learn how to play!**
 
 <br><br>
+
+### Typescript
+
+This version uses Typescript for the front-end development. Typescript is used in `static/src/javascripts` and is compiled as Javascript in `static/src/javascripts` prior to being pushed to the repository.
+
+<br>
 
 ### Licence
 
