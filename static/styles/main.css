@@ -1,0 +1,14 @@
+body {
+    font-size: 20px;
+    background-color: #faf0e6;
+}
+
+.centredText {
+text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}

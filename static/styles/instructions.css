@@ -1,0 +1,29 @@
+#titleForInstructions {
+    text-align: center; 
+    font-weight: bold;
+    font-size: 7vh;
+    margin-top: 50px;
+}
+
+.blueText {
+    color: blue;
+}
+
+.slideDisplay {
+    width: 666px;
+    max-width: 98%;
+    height: 666px;
+    max-height: 100%;
+    border-radius: 5%;
+    border: solid #606060 1vh;
+}
+
+.slideDisplayContainer {
+    height: calc(33vh + 20vw);
+    margin-top: 80px;
+    margin-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

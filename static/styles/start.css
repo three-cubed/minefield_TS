@@ -1,0 +1,45 @@
+.startPageBtn {
+    width: 20vw;
+    height: 20vh;
+    background-color: green;
+    color: yellow;
+    border: solid black 1px;
+    border-radius: 15%;
+    font-size: calc(1.5vw + 1vh);
+}
+
+.startPageBtn:hover {
+    border: solid black 3px;
+}
+
+.startPageBtn:active {
+    border: solid black 5px;
+}
+
+.titleDiv {
+    height: 26vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.btnsDiv {
+    height: 50vh;
+    border: solid green 2px;
+    margin: 0px 100px;
+    width: calc(100% - 200px);
+    border-radius: 15%;
+    display: flex; /* (NB: Currently also in 'flex' class on main.css) */
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#attributionFragment {
+    font-size: 14px;
+    font-family: cursive;
+    text-align: center;
+    font-weight: 900;
+    position: relative;
+    top: -18px;
+}

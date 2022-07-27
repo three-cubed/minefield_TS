@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minefield of calculations</title>
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/play.css">
+</head>
+<body data-keydown-listener='false'>
+
+    <h3 class='centredText'>Welcome to the Mathematical Minefield!</h3>
+
+    <div id='bothsides'>
+
+        <div id='leftside'>
+
+            <div id='appendCanvasHere'></div>
+
+            <form id='questionForm'>
+                <div id='questionDiv'></div>
+                <input id='answerInputBox'>
+                <input type="submit" id='answerBtn' value='?'>
+            </form>
+
+        </div>
+
+        <div id='rightside'>
+
+            <div class='flex'>
+
+                <h4 id='levelMessage'></h4>
+                <div id='toNextScreen'>
+                    <button id='toNextBtn' type="button">
+                        Next level!
+                    </button>
+                </div>
+
+            </div>
+
+            <div id='rewardBox'>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src = '../dist/javascripts/maths.js'></script>
+    <script src = '../dist/javascripts/Tile.js'></script>
+    <script src = '../dist/javascripts/sketch.js'></script>
+    <script src = '../dist/javascripts/interaction.js'></script>
+    <script src = '../dist/javascripts/window.js'></script>
+
+</body>
+</html>
