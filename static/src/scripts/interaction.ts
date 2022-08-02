@@ -4,9 +4,9 @@ let currentTile: any = null;
 let currentAnswer: any = null;
 let awardForThisLevelGiven: boolean = false;
 let questionDiv: HTMLElement;
-let answerInputBox: HTMLInputElement;
+let answerInputBox: any;
 let toNextBtn: HTMLElement;
-let questionForm: HTMLInputElement;
+let questionForm: HTMLElement;
 
 const emoticonList = [
     '&#128512;',
@@ -41,7 +41,7 @@ function doWhenLoaded(): void {
     questionDiv = document.getElementById('questionDiv');
     questionDiv.innerText = startMessage;
 
-    answerInputBox = document.getElementById('answerInputBox');
+    answerInputBox = <HTMLInputElement>document.getElementById('answerInputBox');
     answerInputBox.value = '';
 
     let answerBtn: HTMLElement = document.getElementById('answerBtn');
@@ -61,7 +61,7 @@ function doWhenLoaded(): void {
     }
 }
 
-function clickFunc(event): void {
+function clickFunc(event: any): void {
     // First getting the co-ordinates on the window.
     let x = event.x;
     let y = event.y;
@@ -106,7 +106,7 @@ function moveTileFocus(tileToFocusOn: Tile) {
     answerInputBox.focus();
 }
 
-function getIdentity(click): Tile | null {
+function getIdentity(click: any): Tile | null {
     let tile = null;
     while (tile === null) {
         for (const tileLow of tiles) {
@@ -201,7 +201,7 @@ function doIfComplete(currentTile: Tile): void {
     }
 }
 
-function goToNextLevel(changeOfLevel = 1): void {
+function goToNextLevel(changeOfLevel: number = 1): void {
     tiles = [];
     currentTile = null;
     currentAnswer = null;
